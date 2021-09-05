@@ -1,13 +1,80 @@
-body {
+
+
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  
+  padding:20px;
+  background-color: #524961;
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+img{
+  min-height: 220px;
+  max-width: 100%;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap:40px;
+
+}
+
+.grid .info h3  {
+  padding-bottom: 10px;
+  font-weight: 900;
+}
+.grid .info h4 span{
+  padding: 10px;
+  font-weight: 200;
+}
+
+.grid .info{
+  background-color: #7e6479;
+ padding: 20px;
+ margin-top: -15px;
+ border-radius: 5px ;
+}
+.grid article img{
+  border-radius: 15px;
+  height: 220px;
+  width:500px
+}
+
+@media (min-width:640px){
+  .grid{
+    
+    grid-template-columns: repeat(2 ,1fr)
+  
+  
+  }
+}
+@media (min-width:760px){
+  .grid{
+    
+    grid-template-columns: repeat(3,1fr)
+  
+  
+  }
+}
+
+@media (min-width:990px){
+  .grid{
+    
+    grid-template-columns: repeat(4,1fr)
+  
+  
+  }
+}
+.header{
+  display: flex;
+  color: antiquewhite;
+  padding: 10px;
+  margin-bottom: 50px;
+  background-color: rgb(42, 35, 78);
 }
